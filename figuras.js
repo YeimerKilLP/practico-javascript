@@ -15,8 +15,8 @@ console.groupEnd();
 
 //Codigo del triangulo
 console.group("Triangulo");
-function perimetroTriangulo(ladoTriangulo1, ladoTriangulo2, baseTriangulo) {
-  return ladoTriangulo1 + ladoTriangulo2 + baseTriangulo;
+function perimetroTriangulo(lado1, lado2, baseTriangulo) {
+  return lado1 + lado2 + baseTriangulo;
 }
 
 perimetroTriangulo();
@@ -28,27 +28,30 @@ function areaTriangulo(baseTriangulo, alturaTriangulo) {
 areaTriangulo();
 console.groupEnd();
 
+
+
 //Circulos
 console.group("Circulo");
 
 //Diametro
 
-function diametroCirculo (radioCirculo){
-    return radioCirculo *2;
+function diametroCirculo (radio){
+    return radio *2;
 }
-
 diametroCirculo ();
 
 //PI
 const PI = Math.PI;
 //Circunferencia
-function perimetroCirculo (diametroCirculo) {
-    return diametroCirculo * PI;
+
+function perimetroCirculo (radio) {
+    const diametro = diametroCirculo (radio);
+    return diametro * PI;
 }
 perimetroCirculo ();
 //Area
-function areaCirculo (radioCirculo){
-    return radioCirculo * radioCirculo *PI;
+function areaCirculo (radio){
+    return (radio * radio) *PI;
 
 }
 areaCirculo (); 
