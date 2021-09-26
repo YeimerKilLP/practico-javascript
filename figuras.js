@@ -6,7 +6,7 @@ console.group ('Cuadrado');
 function  perimetroCuadrado (lado){
 return lado * 4;
 }; 
-perimetroCuadrado( );
+perimetroCuadrado(2 );
 
 console.log ('El perimetro del cuadrado mide: ' +perimetroCuadrado+ 'cm' );
 
