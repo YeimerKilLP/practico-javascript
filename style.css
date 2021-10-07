@@ -1,0 +1,56 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 300px;
+    text-align: center;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+
+}
+
+header h1 {
+   width: 90%; 
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: white;
+
+}
+
+
+main {
+
+    width: 100%;
+    height: auto;
+    background-color: red;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    min-width: 320px;
+
+
+}
+
+main section {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: royalblue;
+} */
