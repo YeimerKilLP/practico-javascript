@@ -36,8 +36,16 @@ function onclickButtonCupon() {
   const cuponValue = inputCupon.value;
 
   let descuento;
-
-    switch (cuponValue) {
+  cuponValue === cupons[0]
+    ? (descuento = 15)
+    : cuponValue === cupons[1]
+    ? (descuento = 30)
+    : cuponValue === cupons[2]
+    ? (descuento = 45)
+    : cuponValue === cupons[3]
+    ? (descuento = 60)
+    : alert("El cupón " + cuponValue + "no es válido");
+  /*   switch (cuponValue) {
     case cupons[0]:
       descuento = 15;
       break;
@@ -57,9 +65,9 @@ function onclickButtonCupon() {
     case cupons[4]: 
     descuento=70;
     break;  
-  }
+  } */
 
-  const precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
+  const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
 
   const resultP = document.getElementById("ResultP");
   resultP.innerText = `El precio con descuento es $: ${precioConDescuento}`;
