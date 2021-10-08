@@ -26,10 +26,7 @@ function onclickButtonPriceDiscount(){
  */
 
 //Cupones
-const cupons = ["CHEEMS", "JIMMY", "HONOR", "FORNAI"];
-/* 
-const inputCupon = document.getElementById ("InputCupon");
-const cuponValue = inputCupon.value; */
+const cupons = ["CHEEMS", "JIMMY", "HONOR", "FORNAI", "VALORANT"];
 
 function onclickButtonCupon() {
   const inputPrice = document.getElementById("InputPrice");
@@ -38,11 +35,9 @@ function onclickButtonCupon() {
   const inputCupon = document.getElementById("InputCupon");
   const cuponValue = inputCupon.value;
 
-  let descuento = 0;
+  let descuento;
 
-  console.log(priceValue, cuponValue);
-
-  switch (cuponValue) {
+    switch (cuponValue) {
     case cupons[0]:
       descuento = 15;
       break;
@@ -58,6 +53,10 @@ function onclickButtonCupon() {
     case cupons[3]:
       descuento = 60; //FORNAI
       break;
+
+    case cupons[4]: 
+    descuento=70;
+    break;  
   }
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue,descuento);
