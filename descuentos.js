@@ -44,28 +44,8 @@ function onclickButtonCupon() {
     ? (descuento = 45)
     : cuponValue === cupons[3]
     ? (descuento = 60)
-    : alert("El cupón " + cuponValue + "no es válido");
-  /*   switch (cuponValue) {
-    case cupons[0]:
-      descuento = 15;
-      break;
+    : alert(`El cupon ${cuponValue} no es valido`);
 
-    case cupons[1]:
-      descuento = 30; //Jimmy
-      break;
-
-    case cupons[2]:
-      descuento = 45; //HONOR
-      break;
-
-    case cupons[3]:
-      descuento = 60; //FORNAI
-      break;
-
-    case cupons[4]: 
-    descuento=70;
-    break;  
-  } */
 
   const precioConDescuento = calcularPrecioConDescuento(priceValue, descuento);
 
