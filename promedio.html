@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media aritmectica  </title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media aritmectica</title>
+  </head>
+  <body>
     <header>
-        <h1>Promedio</h1>
+      <h1>Promedio</h1>
     </header>
 
     <form>
-<label for="inputNumero ">
-Escribe el valor que quieres agregar
-</label>
+      <label for="inputNumero "> Escribe el valor que quieres agregar </label>
 
-<input type="number" id="inputNumero">
-<button type="button" onclick="addLista()">
-    Agregar valor </button>
-    <p id="msjLog" ></p>
+      <input type="number" id="inputNumero" />
+      
+      <button type="button" onclick="addLista()">Agregar valor</button>
+      <p id="msjLog"></p>
 
-    <button type="button" onclick="calculaPromedio()">
-         
-        Calcular promedio </button>
-        <p id="msjLog1"> </p>
-    </form>
-   
+      <button type="button" onclick="deletevalor()">Eliminar el ultimo valor
+      agregado</button>
+      <p id="msjLog1"></p>
+
+      <button type="button" onclick="calculaPromedio()">
+        Calcular promedio
+      </button>
+      <p id="resultadoFinal"> </p>
+    </form> 
     
-  
-
     <script src="./promedio.js"></script>
-
-
-</body>
+  </body>
 </html>
