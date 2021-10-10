@@ -79,5 +79,3 @@ function calculaPromedio() {
   const resultadoFinal = document.getElementById("resultadoFinal");
   resultadoFinal.innerText = "El promedio es " + promedioLista;
 }
-
-console.log(promedioLista);
