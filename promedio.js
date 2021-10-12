@@ -74,7 +74,7 @@ function calculaPromedio() {
   ) {
     return valorAcumulado + nuevoElemento;
   });
-  const promedioLista = sumalista / listaNum.length;
+  const promedioLista =parseInt (sumalista / listaNum.length);
 
   const resultadoFinal = document.getElementById("resultadoFinal");
   resultadoFinal.innerText = "El promedio es " + promedioLista;
